@@ -149,6 +149,55 @@ numero6 ? alert('Retorna true') : alert('Retorna false'); // EXEMPLO PRÁTICO
 
 
 
+// OPERADORES LÓGICOS E CONDICIONAIS:
+// && -> and (TODOS OS VALORES PRECISAM SER TRUE, P/ EXECUTAR O BLOCO)
+// || -> or (SE QUALQUER VALOR FOR TRUE, ELE EXECUTA O BLOCO)
+// ! -> not ()
+
+const idade = 23
+const tipo = 'admin'
+
+if (idade < 29 &&  tipo == 'admin') {
+    console.log ('Ele tem mais de 29 anos e é admin (OP. AND)')
+}
+
+if (idade < 29 ||  tipo == 'admin') {
+    console.log ('Ele tem mais de 29 anos e é admin (OP. OR)')
+}
+
+if (!(idade < 29) && !(tipo == 'admin')) {
+    console.log ('Ele tem mais de 29 anos e é admin (OP. NOT)')
+    // NAO VAI APARECER NO CONSOLE POIS ESTAMOS USANDO O OP. AND (&&) QUE PRECISA DE TODOS OS VALORES TRUE.
+}
+
+// ELSE IF - ELSE:
+if (idade > 29) {
+    console.log('Ele tem mais de 29 anos e é um admin')
+} else if (idade > 25) {
+    console.log('Ele tem mais de 25 anos e é um admin')
+} else {
+    console.log('Ele não tem idade minima (ELSE)  ')
+}
+
+// SWITCH CASE:
+switch (idade) {
+    case 20:
+        console.log('Ele tem 20 anos');
+        break;
+    case 21:
+        console.log('Ele tem 21 anos');
+        break;
+    
+        default:
+            console.log('Ele não tem nenhuma das idades anteriores');
+}
+
+
+
+
+
+
+
 
 
 
